@@ -1,0 +1,24 @@
+# Generated PKI state, keys, certificates and test artifacts
+/build/
+*.key
+*.pem
+*.p12
+*.pfx
+*.srl
+*.csr
+*.der
+*.tsq
+*.tsr
+*.p7s
+*.p7m
+*.db
+*.db.attr
+*.db.old
+*.crl
+*.log
+*.lock
+*.old
+*.new
+*.rnd
+*.conf.local
+.env

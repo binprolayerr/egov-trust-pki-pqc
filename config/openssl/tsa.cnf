@@ -1,0 +1,20 @@
+[ tsa ]
+default_tsa = tsa_config1
+
+[ tsa_config1 ]
+dir             = ./build/pki
+serial          = $dir/db/tsa.serial
+crypto_device   = builtin
+signer_cert     = $dir/certs/tsa.cert.pem
+certs           = $dir/certs/ca.cert.pem
+signer_key      = $dir/private/tsa.key.pem
+signer_digest   = sha256
+default_policy  = 1.2.3.4.1
+other_policies  = 1.2.3.4.5.6
+digests         = sha256, sha384, sha512
+accuracy        = secs:1
+clock_precision_digits = 0
+ordering        = yes
+tsa_name        = yes
+ess_cert_id_chain = yes
+ess_cert_id_alg = sha256
